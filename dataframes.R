@@ -3,6 +3,7 @@ library(tidyverse)
 library(ggplot2)
 data("diamonds")
 View(diamonds)
+as_tibble(diamonds) #first 10 rows
 head(diamonds)
 str(diamonds)
 glimpse(diamonds)
