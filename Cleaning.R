@@ -1,0 +1,23 @@
+install.packages("here")
+library("here")
+install.packages("skimr")
+library("skimr")
+install.packages("janitor")
+library(janitor)
+install.packages("dplyr")
+library(dplyr)
+library(palmerpenguins)
+library(tidyr)
+summary(penguins)
+glimpse(penguins)
+head(penguins)
+penguins %>% 
+  select(species)
+penguins %>% 
+  select(-species)
+penguins %>% 
+  rename(island_new=island)
+rename_with(penguins,toupper)
+rename_with(penguins,tolower)
+library(janitor)
+clean_names(penguins)
