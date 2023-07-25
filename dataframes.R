@@ -34,3 +34,10 @@ fruit <- c("Lemon", "Blueberry", "Grapefruit", "Mango", "Strawberry")
 rank <- c(4,2,5,3,1)
 fruit_ranks<-data.frame(fruit,rank)
 View(fruit_ranks)
+
+data("mtcars")
+mtcars
+read_csv(readr_example("mtcars.csv"))
+library(readxl)
+read_excel(readxl_example("type-me.xlsx"))
+excel_sheets(readxl_example("type-me.xlsx"))
