@@ -30,3 +30,9 @@ View(onlineta_city_hotels_v2)
 #r creating a plot part two
 ggplot(data = onlineta_city_hotels) +
   geom_point(mapping = aes(x = lead_time, y = children))
+
+#filtering data for plotting
+data %>%
+  filter(variable1 == "DS") %>%  
+  ggplot(aes(x = weight, y = variable2, colour = variable1)) +  
+  geom_point(alpha = 0.3,  position = position_jitter()) + stat_smooth(method = "lm")
