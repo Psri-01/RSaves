@@ -7,3 +7,7 @@ ggplot(data=penguins)+geom_boxplot(mapping = aes(x=flipper_length_mm,y=body_mass
 ggplot(data=penguins)+geom_smooth(mapping = aes(x=flipper_length_mm,y=body_mass_g),method = lm)
 ggplot(data=penguins)+geom_rug(mapping = aes(x=flipper_length_mm,y=body_mass_g,color=species))
 ggplot(data=penguins)+geom_tile(mapping = aes(x=flipper_length_mm,y=body_mass_g,color=species))
+#alpha is a good option when you have a dense plot with lots of data points.
+ggplot(data=penguins)+geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g,alpha=species))
+ggplot(data=penguins)+geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g,size=species,color=species))
+ggplot(data=penguins)+geom_point(mapping = aes(x=flipper_length_mm,y=body_mass_g),color='purple')
